@@ -14,5 +14,11 @@ namespace TaskFlow.Domain.Entities
             Name = name;
             OwnerId = ownerId;
         }
+
+        public Project(string name)
+        {
+            Name = name;
+        }
+
     }
 }
