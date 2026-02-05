@@ -9,6 +9,8 @@ builder.Services.AddApplication();
 builder.Services.AddInfrastructure(
     builder.Configuration.GetConnectionString("DefaultConnection")!
 );
+builder.Services.AddScoped<JwtTokenGenerator>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
